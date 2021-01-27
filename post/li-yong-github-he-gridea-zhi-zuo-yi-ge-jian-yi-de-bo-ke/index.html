@@ -1,97 +1,92 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>利用Github和Gridea制作一个简易的博客 | Kzstar My Blog</title>
-<link rel="shortcut icon" href="https://mvocp.github.io/favicon.ico?v=1611736465767">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://mvocp.github.io/favicon.ico?v=1611744448019">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://mvocp.github.io/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="利用Github和Gridea制作一个简易的博客 | Kzstar My Blog - Atom Feed" href="https://mvocp.github.io/atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="我是VanllaOcap站主，不少小伙伴对没有域名，没有服务器着急，今天教大家利用Github
-首先，你必须要有一个Github账号，Checkhere:https://github.com/
-我们首先要创立一个仓库
-该仓库名为yourus..." />
-    <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://mvocp.github.io">
-  <img class="avatar" src="https://mvocp.github.io/images/avatar.png?v=1611736465767" alt="">
-  </a>
-  <h1 class="site-title">
-    Kzstar My Blog
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/archives/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://mvocp.github.io">
+        <img class="avatar" src="https://mvocp.github.io/images/avatar.png?v=1611744448019" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://mvocp.github.io">
+        <h1 class="site-title">Kzstar My Blog</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/archives/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              利用Github和Gridea制作一个简易的博客
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-01-27
-              </span>
-              <span>
-                1 min read
-              </span>
-              
-            </div>
+          
+          <h2 class="post-title">利用Github和Gridea制作一个简易的博客</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-01-27</span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h2 id="我是vanllaocap站主不少小伙伴对没有域名没有服务器着急今天教大家利用github首先你必须要有一个github账号checkherehttpsgithubcom我们首先要创立一个仓库该仓库名为yourusernamegithubio能看懂吧紧接着前往个人中心-开发者选项-生成令牌勾上所有的接着生成打开grideahttpsgrideadev下载打开后远程连接-githubpage输入你的githubpage项目名等cname不用填除非你有特殊事保存-检测连接看到连接成功后即可点击同步按钮注意githubpage请设置在master分支好了输入httpsyourusernamegithubio即可访问网站morehttpccdmtk">我是VanllaOcap站主，不少小伙伴对没有域名，没有服务器着急，今天教大家利用Github<br>
+          </div>
+          <div class="post-content">
+            <h2 id="我是vanllaocap站主不少小伙伴对没有域名没有服务器着急今天教大家利用github首先你必须要有一个github账号checkherehttpsgithubcom我们首先要创立一个仓库该仓库名为yourusernamegithubio能看懂吧紧接着前往个人中心-开发者选项-生成令牌勾上所有的接着生成打开grideahttpsgrideadev下载打开后远程连接-githubpage输入你的githubpage项目名等cname不用填除非你有特殊事保存-检测连接看到连接成功后即可点击同步按钮注意githubpage请设置在master分支好了输入httpsyourusernamegithubio即可访问网站morehttpccdmtk">我是VanllaOcap站主，不少小伙伴对没有域名，没有服务器着急，今天教大家利用Github<br>
 首先，你必须要有一个Github账号，Checkhere:https://github.com/<br>
 我们首先要创立一个仓库<br>
 该仓库名为yourusername.github.io<br>
@@ -110,89 +105,49 @@ http://ccdm.tk/</h2>
 <p>Tips:<br>
 github有些人访问极慢，请在Host加入关于Github的代码（具体自己百度）</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E6%88%91%E6%98%AFvanllaocap%E7%AB%99%E4%B8%BB%E4%B8%8D%E5%B0%91%E5%B0%8F%E4%BC%99%E4%BC%B4%E5%AF%B9%E6%B2%A1%E6%9C%89%E5%9F%9F%E5%90%8D%E6%B2%A1%E6%9C%89%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9D%80%E6%80%A5%E4%BB%8A%E5%A4%A9%E6%95%99%E5%A4%A7%E5%AE%B6%E5%88%A9%E7%94%A8github%E9%A6%96%E5%85%88%E4%BD%A0%E5%BF%85%E9%A1%BB%E8%A6%81%E6%9C%89%E4%B8%80%E4%B8%AAgithub%E8%B4%A6%E5%8F%B7checkherehttpsgithubcom%E6%88%91%E4%BB%AC%E9%A6%96%E5%85%88%E8%A6%81%E5%88%9B%E7%AB%8B%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93%E8%AF%A5%E4%BB%93%E5%BA%93%E5%90%8D%E4%B8%BAyourusernamegithubio%E8%83%BD%E7%9C%8B%E6%87%82%E5%90%A7%E7%B4%A7%E6%8E%A5%E7%9D%80%E5%89%8D%E5%BE%80%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83-%E5%BC%80%E5%8F%91%E8%80%85%E9%80%89%E9%A1%B9-%E7%94%9F%E6%88%90%E4%BB%A4%E7%89%8C%E5%8B%BE%E4%B8%8A%E6%89%80%E6%9C%89%E7%9A%84%E6%8E%A5%E7%9D%80%E7%94%9F%E6%88%90%E6%89%93%E5%BC%80grideahttpsgrideadev%E4%B8%8B%E8%BD%BD%E6%89%93%E5%BC%80%E5%90%8E%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5-githubpage%E8%BE%93%E5%85%A5%E4%BD%A0%E7%9A%84githubpage%E9%A1%B9%E7%9B%AE%E5%90%8D%E7%AD%89cname%E4%B8%8D%E7%94%A8%E5%A1%AB%E9%99%A4%E9%9D%9E%E4%BD%A0%E6%9C%89%E7%89%B9%E6%AE%8A%E4%BA%8B%E4%BF%9D%E5%AD%98-%E6%A3%80%E6%B5%8B%E8%BF%9E%E6%8E%A5%E7%9C%8B%E5%88%B0%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F%E5%90%8E%E5%8D%B3%E5%8F%AF%E7%82%B9%E5%87%BB%E5%90%8C%E6%AD%A5%E6%8C%89%E9%92%AE%E6%B3%A8%E6%84%8Fgithubpage%E8%AF%B7%E8%AE%BE%E7%BD%AE%E5%9C%A8master%E5%88%86%E6%94%AF%E5%A5%BD%E4%BA%86%E8%BE%93%E5%85%A5httpsyourusernamegithubio%E5%8D%B3%E5%8F%AF%E8%AE%BF%E9%97%AE%E7%BD%91%E7%AB%99morehttpccdmtk">我是VanllaOcap站主，不少小伙伴对没有域名，没有服务器着急，今天教大家利用Github<br>
-首先，你必须要有一个Github账号，Checkhere:https://github.com/<br>
-我们首先要创立一个仓库<br>
-该仓库名为yourusername.github.io<br>
-能看懂吧……<br>
-紧接着，前往个人中心-开发者选项-生成令牌<br>
-勾上所有的！<br>
-接着，生成，打开Gridea(https://gridea.dev/)下载，打开后远程连接-GithubPage<br>
-输入你的GithubPage，项目名等<br>
-CNAME不用填（除非你有特殊事）<br>
-保存-检测连接<br>
-看到连接成功后，即可点击同步按钮<br>
-注意：GithubPage请设置在Master分支！<br>
-好了，输入https://yourusername.github.io/即可访问网站！<br>
-More:<br>
-http://ccdm.tk/</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
+      </div>
 
-        
+      
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://mvocp.github.io/atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://mvocp.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
+
     </div>
+    <script type="application/javascript">
 
-    <script>
-      hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+</script>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
   </body>
 </html>
