@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mvocp.github.io</id>
+    <id>http://me.ccdm.tk</id>
     <title>Kzstar My Blog</title>
-    <updated>2021-01-29T02:31:34.613Z</updated>
+    <updated>2021-01-29T02:48:46.457Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://mvocp.github.io"/>
-    <link rel="self" href="https://mvocp.github.io/atom.xml"/>
+    <link rel="alternate" href="http://me.ccdm.tk"/>
+    <link rel="self" href="http://me.ccdm.tk/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://mvocp.github.io/images/avatar.png</logo>
-    <icon>https://mvocp.github.io/favicon.ico</icon>
+    <logo>http://me.ccdm.tk/images/avatar.png</logo>
+    <icon>http://me.ccdm.tk/favicon.ico</icon>
     <rights>All rights reserved 2021, Kzstar My Blog</rights>
     <entry>
         <title type="html"><![CDATA[获得免费的.tk域名]]></title>
-        <id>https://mvocp.github.io/post/huo-de-mian-fei-de-tk-yu-ming/</id>
-        <link href="https://mvocp.github.io/post/huo-de-mian-fei-de-tk-yu-ming/">
+        <id>http://me.ccdm.tk/post/huo-de-mian-fei-de-tk-yu-ming/</id>
+        <link href="http://me.ccdm.tk/post/huo-de-mian-fei-de-tk-yu-ming/">
         </link>
         <updated>2021-01-29T02:03:46.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[利用Github和Gridea制作一个简易的博客]]></title>
-        <id>https://mvocp.github.io/post/li-yong-github-he-gridea-zhi-zuo-yi-ge-jian-yi-de-bo-ke/</id>
-        <link href="https://mvocp.github.io/post/li-yong-github-he-gridea-zhi-zuo-yi-ge-jian-yi-de-bo-ke/">
+        <id>http://me.ccdm.tk/post/li-yong-github-he-gridea-zhi-zuo-yi-ge-jian-yi-de-bo-ke/</id>
+        <link href="http://me.ccdm.tk/post/li-yong-github-he-gridea-zhi-zuo-yi-ge-jian-yi-de-bo-ke/">
         </link>
         <updated>2021-01-27T08:23:11.000Z</updated>
     </entry>
