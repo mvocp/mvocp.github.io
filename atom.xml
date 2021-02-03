@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dvovl.ml</id>
     <title>Kzstar My Blog</title>
-    <updated>2021-02-02T03:34:19.999Z</updated>
+    <updated>2021-02-03T01:00:56.878Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dvovl.ml"/>
     <link rel="self" href="https://dvovl.ml/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dvovl.ml/images/avatar.png</logo>
     <icon>https://dvovl.ml/favicon.ico</icon>
     <rights>All rights reserved 2021, Kzstar My Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[2-如何让Gridea制作的博客有SSL认证（自定义域名）]]></title>
+        <id>https://dvovl.ml/post/2-ru-he-rang-gridea-zhi-zuo-de-bo-ke-you-ssl-ren-zheng-zi-ding-yi-yu-ming/</id>
+        <link href="https://dvovl.ml/post/2-ru-he-rang-gridea-zhi-zuo-de-bo-ke-you-ssl-ren-zheng-zi-ding-yi-yu-ming/">
+        </link>
+        <updated>2021-02-03T00:56:34.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何高速下载特定游戏（实际上就是推荐软件]]></title>
         <id>https://dvovl.ml/post/ru-he-gao-su-xia-zai-te-ding-you-xi-shi-ji-shang-jiu-shi-tui-jian-ruan-jian/</id>
