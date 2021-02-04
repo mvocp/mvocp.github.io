@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Kzstar My Blog</title>
+<title>关于本网站 | Kzstar My Blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,21 @@
 <link rel="stylesheet" href="https://dvovl.ml/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="温故而知新">
+    <meta name="description" content="GithubPages服务器不怎么稳定，随时都有可能掉线访问不了，如果长时间无法访问，反馈问题给QQ:66870019
+" />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
@@ -116,10 +124,36 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">关于本网站</h2>
+            <div class="post-date">2021-02-04</div>
             
+            <div class="post-content" v-pre>
+              <p>GithubPages服务器不怎么稳定，随时都有可能掉线访问不了，如果长时间无法访问，反馈问题给QQ:66870019</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://dvovl.ml/post/2-ru-he-rang-gridea-zhi-zuo-de-bo-ke-you-ssl-ren-zheng-zi-ding-yi-yu-ming/">
+                  <h3 class="post-title">
+                    2-如何让Gridea制作的博客有SSL认证（自定义域名）
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -139,6 +173,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'aefa333d6ee274bd9a75',
+        clientSecret: 'eb7d3481b96ffa9805490b07b957ba93cd395742',
+        repo: 'mvocp.github.io',
+        owner: 'mvocp',
+        admin: ['mvocp'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
