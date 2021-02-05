@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dvovl.ml</id>
     <title>Kzstar My Blog</title>
-    <updated>2021-02-04T01:45:47.147Z</updated>
+    <updated>2021-02-05T02:19:12.651Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dvovl.ml"/>
     <link rel="self" href="https://dvovl.ml/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://dvovl.ml/images/avatar.png</logo>
     <icon>https://dvovl.ml/favicon.ico</icon>
     <rights>All rights reserved 2021, Kzstar My Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[ProFreeHost白嫖教程]]></title>
+        <id>https://dvovl.ml/post/profreehost-bai-piao-jiao-cheng/</id>
+        <link href="https://dvovl.ml/post/profreehost-bai-piao-jiao-cheng/">
+        </link>
+        <updated>2021-02-05T02:17:45.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于本网站]]></title>
         <id>https://dvovl.ml/post/guan-yu-ben-wang-zhan/</id>
